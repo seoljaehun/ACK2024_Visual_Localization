@@ -1,8 +1,7 @@
 # 🥇ACK2025_Visual_Localization
 
 ---
-### Image Segmentation과 특징점 매칭 알고리즘을 활용한 
-### Aerial Vision-Based-Localization 시스템 구현
+### Image Segmentation과 특징점 매칭 알고리즘을 활용한 Aerial Vision-Based-Localization 시스템 구현
 
 GNSS/INS를 활용한 항법 시스템은 무인항공기의 위치 추정에 있어 매우 중요한 요소이다. 
 그러나 GNSS/INS 시스템은 두 센서의 상호보완 시스템이므로 하나의 센서에 오차가 발생할 시, 위치 좌표를 신뢰하기 어렵다. 
@@ -21,7 +20,7 @@ Visual Navigation 시스템에 활용하여 무인 항공기의 자율 비행 �
   Road: 1271장 (.PNG)
 
 # 2. 시스템 프로세스
-그림
+![Localization System Process](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/Localization%20System%20Process.PNG)
 
 + **Map Data와 UAV Image 준비**
 
@@ -47,7 +46,7 @@ Visual Navigation 시스템에 활용하여 무인 항공기의 자율 비행 �
 - DeepLabV3 : 다양한 비율의 Atrous Convolusion을 적용하여 고밀도의 특징맵을 유지하고, 이를 ASPP 모듈로 결합하여 강건한 다중 스케일 문맥 정보를 포착하는 분할 모델
 - SegFormer : 계층적 구조의 Hierarchical Transformer 인코더를 통해 다중 스케일 특징을 추출하고, 이를 Light-Weight MLP 디코더와 결합하여 높은 성능과 효율성을 보여주는 분할 모델
 
-그림
+![Segmentation Result](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/Segmentation%20Result.PNG)
 
 성능 평가 결과, SegFormer 모델이 가장 우수한 지표를 보여 최종 모델로 선정
 
@@ -57,12 +56,23 @@ Map Data와 UAV Image에서 추출된 Building, Road Segmentation 이미지를 �
 
 - 새로운 관심영역 ROI 생성 : Mean-Shift Clustering 알고리즘 적용
 
-그림
+![ROI](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/ROI.PNG)
 
 - 클러스터의 경계 생성: 밀도 기반 클러스터링(DBSCAN) 알고리즘 적용
 
-그림
+![Clustering](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/Clustering.PNG)
 
 - 현재 위치 추정: 가장 큰 클러스터 4개를 선택한 뒤, 그 중심좌표 도출 -> 현재위치 추정
 
 # 4. 실험 결과
+
+- Image Segmentation 모델과 특징점 매칭 알고리즘을 결합한 방식이 평균 75.60%의 높은 정확도 달성
+
+![Localization Result](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/Localization%20Result.PNG)
+
+---
+
+## 관련 자료
+
+- Paper: <https://www.koreascience.kr/article/CFKO202520961205149.page?&lang=ko>
+- 참고문헌: <>
