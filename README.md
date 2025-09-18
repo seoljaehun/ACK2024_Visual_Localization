@@ -1,7 +1,7 @@
 # 🥇ACK2025_Visual_Localization
 
 ---
-### Image Segmentation과 특징점 매칭 알고리즘을 활용한 Aerial Vision-Based-Localization 시스템 구현
+### Image Segmentation과 특징점 매칭 알고리즘을 활용한 Vision-Based-Localization 시스템 구현
 
 GNSS/INS를 활용한 항법 시스템은 무인항공기의 위치 추정에 있어 매우 중요한 요소이다. 
 그러나 GNSS/INS 시스템은 두 센서의 상호보완 시스템이므로 하나의 센서에 오차가 발생할 시, 위치 좌표를 신뢰하기 어렵다. 
@@ -15,9 +15,9 @@ Visual Navigation 시스템에 활용하여 무인 항공기의 자율 비행 �
 # 1. 데이터 셋
 - AI Hub (aihub.or.kr)의 "위성영상 객체판독" 이미지 데이터
 
-  Building: 1393장 (.PNG)
+  - Building: 1393장 (.PNG)
 
-  Road: 1271장 (.PNG)
+  - Road: 1271장 (.PNG)
 
 # 2. 시스템 프로세스
 ![Localization System Process](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/Localization%20System%20Process.PNG)
@@ -38,7 +38,7 @@ Visual Navigation 시스템에 활용하여 무인 항공기의 자율 비행 �
 
 # 3. 시스템 구현
 
-**1. Segmentation 모델 성능 비교**
+**1. Image Segmentation**
 
 3개의 Segmentation 모델 성능 비교 및 최적 모델 선정
 
@@ -62,7 +62,9 @@ Map Data와 UAV Image에서 추출된 Building, Road Segmentation 이미지를 �
 
 ![Clustering](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/Clustering.PNG)
 
-- 현재 위치 추정: 가장 큰 클러스터 4개를 선택한 뒤, 그 중심좌표 도출 -> 현재위치 추정
+**3. Localization**
+
+- 현재 위치 추정: 가장 큰 클러스터 4개를 선택한 뒤, 그 중심좌표 도출
 
 # 4. 실험 결과
 
@@ -75,4 +77,4 @@ Map Data와 UAV Image에서 추출된 Building, Road Segmentation 이미지를 �
 ## 관련 자료
 
 - Paper: <https://www.koreascience.kr/article/CFKO202520961205149.page?&lang=ko>
-- 참고문헌: <>
+- 참고문헌: <https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Reference/%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8C>
