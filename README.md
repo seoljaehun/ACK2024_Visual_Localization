@@ -1,7 +1,8 @@
 # 🥇ACK2025_Visual_Localization
 
 ---
-### Image Segmentation과 특징점 매칭 알고리즘을 활용한 Aerial Vision-Based-Localization 시스템 구현
+### Image Segmentation과 특징점 매칭 알고리즘을 활용한 
+### Aerial Vision-Based-Localization 시스템 구현
 
 GNSS/INS를 활용한 항법 시스템은 무인항공기의 위치 추정에 있어 매우 중요한 요소이다. 
 그러나 GNSS/INS 시스템은 두 센서의 상호보완 시스템이므로 하나의 센서에 오차가 발생할 시, 위치 좌표를 신뢰하기 어렵다. 
