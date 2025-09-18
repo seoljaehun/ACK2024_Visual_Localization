@@ -13,11 +13,11 @@ Visual Navigation 시스템에 활용하여 무인 항공기의 자율 비행 �
 ---
 
 # 1. 데이터 셋
-- AI Hub (aihub.or.kr)의 "위성영상 객체판독" 이미지 데이터
+- AI Hub (aihub.or.kr)의 "**위성영상 객체판독**" 이미지 데이터
 
-  - Building: 1393장 (.PNG)
-
-  - Road: 1271장 (.PNG)
+  > Building: 1393장 (.PNG)
+  >
+  > Road: 1271장 (.PNG)
 
 # 2. 시스템 프로세스
 ![Localization System Process](https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Image_Data/Localization%20System%20Process.PNG)
