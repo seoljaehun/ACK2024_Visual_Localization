@@ -79,6 +79,6 @@ Map Data와 UAV Image에서 추출된 Building, Road Segmentation 이미지를 �
 
 ## 관련 자료
 
-- Paper: <https://www.koreascience.kr/article/CFKO202520961205149.page?&lang=ko>
-- Dataset: <https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&searchKeyword=%EC%9C%84%EC%84%B1%EC%98%81%EC%83%81%20%EA%B0%9D%EC%B2%B4%20%ED%8C%90%EB%8F%85&aihubDataSe=data&dataSetSn=73>
-- 참고문헌: <https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Reference/%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8C>
+- Paper : <https://www.koreascience.kr/article/CFKO202520961205149.page?&lang=ko>
+- Dataset : <https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&searchKeyword=%EC%9C%84%EC%84%B1%EC%98%81%EC%83%81%20%EA%B0%9D%EC%B2%B4%20%ED%8C%90%EB%8F%85&aihubDataSe=data&dataSetSn=73>
+- 참고문헌 : <https://github.com/seoljaehun/ACK2024_Visual_Localization/blob/main/Reference/%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8C>
