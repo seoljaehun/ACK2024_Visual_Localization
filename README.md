@@ -69,6 +69,7 @@ Map Data와 UAV Image에서 추출된 Building, Road Segmentation 이미지를 �
 # 4. 실험 결과
 
 + Image Segmentation 모델과 특징점 매칭 알고리즘을 결합한 방식이 평균 75.60%의 높은 정확도 달성
+  
   - 빨간색 사각형 : 현재 위치 (정답 위치)
   - 녹색 사각형 : 추정한 위치
 
